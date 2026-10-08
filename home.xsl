@@ -28,15 +28,28 @@
     omit-xml-declaration="yes"
     suppress-indentation="xhtml:pre" />
 
+  <xsl:import href="_layout.xsl"/>
+
   <!-- on-no-match="fail" (below) switches off the built-in rules, which
        includes the one that would otherwise walk from the document node
        into its element child - so that step has to be explicit. -->
-  <xsl:template match="document-node()">
-    <!-- <xsl:apply-templates select="m:sitemap"/> -->
+  <!-- <xsl:template match="document-node()">
      <xsl:apply-templates select="m:snippets" />
+  </xsl:template> -->
+
+  <xsl:template match="/m:snippets" mode="head">
+    <xhtml:title>Useless Notes</xhtml:title>
   </xsl:template>
 
   <xsl:template match="/m:snippets">
+    <xhtml:h1>Useless Notes</xhtml:h1>
+    <xhtml:p>Something something twilight years of a webfarmer.</xhtml:p>
+    <xsl:for-each select="xhtml:section[position() &lt;= 3]">
+      <xsl:apply-templates />
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="/m:snippets" mode="original">
     <xhtml:html lang="en">
       <xhtml:head>
         <xhtml:meta charset="UTF-8" />
@@ -56,32 +69,6 @@
         </xhtml:div>
       </xhtml:body>
     </xhtml:html>  
-  </xsl:template>
-
-  <xsl:template match="/m:sitemap">
-    
-    <xhtml:html>
-      <xhtml:head>
-        <xhtml:title>Home</xhtml:title>
-      </xhtml:head>
-      <xhtml:body>
-        <xhtml:h1>Welcome to the Home Page</xhtml:h1>
-        <xhtml:p>Yadda yadda site details.</xhtml:p>
-        <xhtml:ul>
-          <xsl:for-each select="m:entry">
-            <xsl:sort select="@created_at" order="descending" />
-            <xsl:if test="position() &lt;= 5">
-            <xhtml:li>
-              <xhtml:span><xsl:value-of select="format-dateTime(xs:dateTime(@created_at), '[Y0001]-[M01]-[D01]')"/></xhtml:span>
-              <xhtml:a href="{resolve-uri(@path, $base-url)}"><xsl:value-of select="."/></xhtml:a>
-            </xhtml:li>
-            </xsl:if>
-          </xsl:for-each>          
-        </xhtml:ul>
-      </xhtml:body>
-    </xhtml:html>
-
-
   </xsl:template>
 
   <!-- Nothing else should reach the output. -->

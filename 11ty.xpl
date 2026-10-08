@@ -80,7 +80,7 @@
 
     <p:xslt name="snippet">
       <p:with-input port="source"><p:pipe step="transform"/></p:with-input>
-      <p:with-input port="stylesheet" href="{$page-stylesheet}"/>
+      <p:with-input port="stylesheet" href="frugal2snippet.xsl"/>
       <p:with-option name="parameters" select="map{
         QName('', 'do-snippets'): 'yes',
         QName('', 'path'): $path

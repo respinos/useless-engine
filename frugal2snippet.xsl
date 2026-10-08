@@ -17,18 +17,19 @@
 
   <xsl:mode on-no-match="shallow-copy"/>
 
-  <xsl:param name="do-snippets" as="xs:string" select="'no'"/>
+  <xsl:param name="do-snippets" as="xs:string" select="'yes'" />
   <xsl:param name="path" as="xs:string" select="''" />
 
-  <xsl:include href="_layout.xsl"/>
   <xsl:include href="_frugal.xsl"/>
 
-  <xsl:template match="/m:post" mode="head">
-    <xsl:apply-templates select="m:head"/>
+  <xsl:template match="/">
+    <xsl:apply-templates/>
   </xsl:template>
 
   <xsl:template match="/m:post">
-    <xsl:apply-templates select="m:doc" />
+    <xhtml:section>
+      <xsl:apply-templates select="m:doc" />
+    </xhtml:section>
   </xsl:template>
 
 </xsl:stylesheet>
