@@ -1,3 +1,9 @@
+# Useless
+tmp
+public/*.html
+public/**/*.html
+public/**/*.xml
+
 # Logs
 logs
 *.log
