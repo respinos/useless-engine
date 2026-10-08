@@ -1,0 +1,68 @@
+@layer reset {
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: unset;
+  }
+
+  a:not([class]) {
+    text-decoration-thickness: max(0.05em, 1px);
+    text-underline-offset: 0.15em;
+  }
+
+  :target {
+    scroll-margin-block-start: 2rem;
+  }
+
+  time {
+    display: inline;
+    margin: unset;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  canvas,
+  img,
+  picture,
+  svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  sub {
+    font-size: var(--step--1);
+    font-variant-position: sub;
+  }
+
+  sub,
+  sup {
+    line-height: 0;
+    padding-left: 0.25em;
+  }
+
+  sup {
+    font-size: var(--step--1);
+    font-variant-position: super;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    :after,
+    :before {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

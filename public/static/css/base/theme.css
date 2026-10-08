@@ -1,0 +1,172 @@
+@layer theme {
+  :root {
+--color-dark-walnut-50: oklch(96.46% 0.016 58.64);
+--color-dark-walnut-100: oklch(93.05% 0.032 62.82);
+--color-dark-walnut-200: oklch(86.01% 0.064 60.63);
+--color-dark-walnut-300: oklch(79.35% 0.097 60.10);
+--color-dark-walnut-400: oklch(72.99% 0.128 58.35);
+--color-dark-walnut-500: oklch(67.06% 0.156 53.71);
+--color-dark-walnut-600: oklch(56.98% 0.129 54.59);
+--color-dark-walnut-700: oklch(46.40% 0.103 54.91);
+--color-dark-walnut-800: oklch(35.18% 0.075 55.37);
+--color-dark-walnut-900: oklch(23.22% 0.043 59.08);
+--color-dark-walnut-950: oklch(19.37% 0.032 61.81);
+
+--color-saddle-brown-50: oklch(96.47% 0.012 67.68);
+--color-saddle-brown-100: oklch(93.01% 0.025 65.57);
+--color-saddle-brown-200: oklch(85.83% 0.050 63.14);
+--color-saddle-brown-300: oklch(78.82% 0.075 63.04);
+--color-saddle-brown-400: oklch(71.80% 0.101 61.13);
+--color-saddle-brown-500: oklch(65.19% 0.125 59.02);
+--color-saddle-brown-600: oklch(55.36% 0.104 58.87);
+--color-saddle-brown-700: oklch(45.27% 0.082 59.88);
+--color-saddle-brown-800: oklch(34.50% 0.060 59.71);
+--color-saddle-brown-900: oklch(22.91% 0.034 62.81);
+--color-saddle-brown-950: oklch(18.97% 0.025 60.16);
+
+--color-toffee-brown-50: oklch(96.44% 0.009 62.59);
+--color-toffee-brown-100: oklch(93.04% 0.020 69.99);
+--color-toffee-brown-200: oklch(85.77% 0.039 67.27);
+--color-toffee-brown-300: oklch(78.71% 0.060 67.62);
+--color-toffee-brown-400: oklch(71.47% 0.081 65.92);
+--color-toffee-brown-500: oklch(64.47% 0.101 64.80);
+--color-toffee-brown-600: oklch(54.78% 0.084 64.46);
+--color-toffee-brown-700: oklch(44.84% 0.066 65.56);
+--color-toffee-brown-800: oklch(34.09% 0.047 65.13);
+--color-toffee-brown-900: oklch(22.79% 0.027 68.16);
+--color-toffee-brown-950: oklch(18.99% 0.020 66.11);
+
+--color-camel-50: oklch(96.54% 0.006 75.41);
+--color-camel-100: oklch(92.97% 0.012 79.78);
+--color-camel-200: oklch(85.68% 0.026 75.24);
+--color-camel-300: oklch(78.42% 0.038 76.53);
+--color-camel-400: oklch(71.11% 0.053 76.64);
+--color-camel-500: oklch(63.41% 0.066 75.07);
+--color-camel-600: oklch(54.17% 0.056 76.12);
+--color-camel-700: oklch(44.20% 0.043 75.82);
+--color-camel-800: oklch(33.73% 0.031 74.40);
+--color-camel-900: oklch(22.52% 0.017 79.37);
+--color-camel-950: oklch(18.95% 0.013 77.82);
+
+--color-khaki-beige-50: oklch(96.68% 0.005 95.10);
+--color-khaki-beige-100: oklch(93.11% 0.011 89.73);
+--color-khaki-beige-200: oklch(86.31% 0.024 93.36);
+--color-khaki-beige-300: oklch(79.19% 0.035 92.32);
+--color-khaki-beige-400: oklch(71.88% 0.046 92.75);
+--color-khaki-beige-500: oklch(64.69% 0.059 93.72);
+--color-khaki-beige-600: oklch(54.93% 0.048 92.79);
+--color-khaki-beige-700: oklch(45.03% 0.040 92.43);
+--color-khaki-beige-800: oklch(34.46% 0.029 93.65);
+--color-khaki-beige-900: oklch(22.71% 0.015 89.92);
+--color-khaki-beige-950: oklch(19.14% 0.012 91.79);
+
+--color-dry-sage-50: oklch(96.80% 0.007 115.71);
+--color-dry-sage-100: oklch(93.38% 0.012 111.77);
+--color-dry-sage-200: oklch(86.83% 0.027 113.89);
+--color-dry-sage-300: oklch(80.08% 0.040 112.09);
+--color-dry-sage-400: oklch(73.12% 0.053 112.59);
+--color-dry-sage-500: oklch(66.24% 0.068 113.97);
+--color-dry-sage-600: oklch(56.26% 0.055 113.07);
+--color-dry-sage-700: oklch(46.04% 0.044 112.96);
+--color-dry-sage-800: oklch(35.11% 0.033 115.07);
+--color-dry-sage-900: oklch(23.08% 0.017 112.86);
+--color-dry-sage-950: oklch(19.20% 0.014 114.30);
+
+--color-dry-sage-50: oklch(96.80% 0.007 115.71);
+--color-dry-sage-100: oklch(93.30% 0.012 116.82);
+--color-dry-sage-200: oklch(86.67% 0.028 118.39);
+--color-dry-sage-300: oklch(79.84% 0.040 116.81);
+--color-dry-sage-400: oklch(72.80% 0.054 117.40);
+--color-dry-sage-500: oklch(65.83% 0.070 118.64);
+--color-dry-sage-600: oklch(55.91% 0.056 117.93);
+--color-dry-sage-700: oklch(45.76% 0.045 117.73);
+--color-dry-sage-800: oklch(34.92% 0.034 119.58);
+--color-dry-sage-900: oklch(22.97% 0.017 117.93);
+--color-dry-sage-950: oklch(19.20% 0.014 114.30);
+
+--color-dusty-olive-50: oklch(96.80% 0.007 115.71);
+--color-dusty-olive-100: oklch(93.30% 0.012 116.82);
+--color-dusty-olive-200: oklch(86.67% 0.028 118.39);
+--color-dusty-olive-300: oklch(79.76% 0.040 118.35);
+--color-dusty-olive-400: oklch(72.72% 0.054 118.58);
+--color-dusty-olive-500: oklch(65.75% 0.070 119.55);
+--color-dusty-olive-600: oklch(55.83% 0.057 119.10);
+--color-dusty-olive-700: oklch(45.68% 0.046 119.26);
+--color-dusty-olive-800: oklch(34.92% 0.034 119.58);
+--color-dusty-olive-900: oklch(22.97% 0.017 117.93);
+--color-dusty-olive-950: oklch(19.20% 0.014 114.30);
+
+--color-ebony-50: oklch(96.53% 0.005 117.92);
+--color-ebony-100: oklch(93.23% 0.012 121.71);
+--color-ebony-200: oklch(86.34% 0.025 121.97);
+--color-ebony-300: oklch(79.34% 0.038 122.28);
+--color-ebony-400: oklch(72.01% 0.049 122.20);
+--color-ebony-500: oklch(64.72% 0.063 122.81);
+--color-ebony-600: oklch(55.06% 0.052 122.67);
+--color-ebony-700: oklch(45.19% 0.043 123.10);
+--color-ebony-800: oklch(34.49% 0.031 123);
+--color-ebony-900: oklch(22.87% 0.017 122.74);
+--color-ebony-950: oklch(19.12% 0.012 122.53);
+
+--color-charcoal-brown-50: oklch(96.65% 0.007 132.42);
+--color-charcoal-brown-100: oklch(93.32% 0.016 126.83);
+--color-charcoal-brown-200: oklch(86.29% 0.029 128.84);
+--color-charcoal-brown-300: oklch(79.41% 0.046 128.50);
+--color-charcoal-brown-400: oklch(72.14% 0.060 129.44);
+--color-charcoal-brown-500: oklch(65.03% 0.078 129.56);
+--color-charcoal-brown-600: oklch(55.24% 0.064 129.86);
+--color-charcoal-brown-700: oklch(45.31% 0.052 129.26);
+--color-charcoal-brown-800: oklch(34.46% 0.036 129.71);
+--color-charcoal-brown-900: oklch(23.03% 0.022 127.88);
+--color-charcoal-brown-950: oklch(18.98% 0.014 126.61);
+
+
+
+
+    --brand-color-main: oklch(66.58% 0.157 58.32);
+    --brand-color-light: oklch(75.86% 0.1659 59);
+    --brand-color-dark: oklch(55.53% 0.146 48);
+    --background-color-1: oklch(98.42% 0.003 247.86);
+    --foreground-color-1: oklch(5.52% 0.001 106.42);
+    --stone-50: oklch(98.48% 0.001 106.42);
+    --stone-100: oklch(96.99% 0.001 106.42);
+    --stone-200: oklch(92.32% 0.003 48.72);
+    --stone-300: oklch(86.87% 0.004 56.37);
+    --stone-400: oklch(70.9% 0.01 56.259);
+    --stone-500: oklch(55.34% 0.012 58.07);
+    --stone-800: oklch(26.85% 0.006 34.3);
+    --stone-900: oklch(21.61% 0.006 56.04);
+    --slate-50: oklch(98.42% 0.003 247.86);
+    --slate-100: oklch(96.83% 0.007 247.9);
+    --slate-200: oklch(92.88% 0.013 255.51);
+    --slate-300: oklch(86.9% 0.02 252.89);
+    --slate-400: oklch(70.4% 0.04 256.788);
+    --slate-500: oklch(55.44% 0.041 257.42);
+    --slate-800: oklch(27.95% 0.037 260.03);
+    --slate-900: oklch(20.77% 0.04 265.75);
+    --highlight-color: oklch(94.51% 0.124 101.54);
+    --code-bg: #f5f3ff;
+    --code-fg: #2e1065;
+    --masto-purple: oklch(53.24% 0.219 280.43);
+    --masto-light: oklch(89% 0.05 280.43);
+    --shadow-md:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --font-family-sans:
+      "Annotation Mono", "Victor Mono", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-serif:
+      valkyrie_a, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-family-mono:
+      "Victor Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    --step--2: clamp(0.6944rem, 0.6772rem + 0.0863cqi, 0.76rem);
+    --step--1: clamp(0.8333rem, 0.8026rem + 0.1535cqi, 0.95rem);
+    --step-0: clamp(1rem, 0.9507rem + 0.2467cqi, 1.1875rem);
+    --step-1: clamp(1.2rem, 1.1252rem + 0.3742cqi, 1.4844rem);
+    --step-2: clamp(1.44rem, 1.3307rem + 0.5467cqi, 1.8555rem);
+    --step-3: clamp(1.728rem, 1.5724rem + 0.7781cqi, 2.3193rem);
+    --step-4: clamp(2.0736rem, 1.8563rem + 1.0863cqi, 2.8992rem);
+    --step-5: clamp(2.4883rem, 2.1895rem + 1.4943cqi, 3.624rem);
+    color-scheme: light dark;
+  }
+}

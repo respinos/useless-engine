@@ -1,0 +1,14 @@
+@layer layout {
+  .container {
+    margin-inline: auto;
+    width: min(1080px, 100% - 3em);
+  }
+
+  .main {
+    margin-inline: auto;
+    width: min(70ch, 100%);
+    & article {
+      margin-block-end: 3em;
+    }
+  }
+}
